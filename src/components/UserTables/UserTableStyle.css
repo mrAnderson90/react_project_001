@@ -1,0 +1,19 @@
+.table {
+	display: grid;
+	grid-template-columns: 50%;
+}
+
+.table_row {
+	display: flex;
+}
+
+.table_header {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.table_row div {
+	width: 20%;
+	padding: 0.5rem;
+	border-bottom: 1px solid #555;
+}
