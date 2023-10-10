@@ -1,0 +1,16 @@
+.nav-panel {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.nav-panel-item {
+	padding: 0.5rem;
+	border: 1px solid #555;
+	background-color: inherit;
+}
+
+.nav-panel-item.active {
+	color: #fff;
+	background-color: deepSkyBlue;
+}

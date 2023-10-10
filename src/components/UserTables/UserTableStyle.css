@@ -4,7 +4,7 @@
 
 .table {
 	display: grid;
-	grid-template-columns: 50%;
+	grid-template-columns: 80%;
 }
 
 .table_row {
@@ -24,4 +24,8 @@
 
 .table_row div:first-child {
 	width: 10%;
+}
+
+.table_row div:last-child {
+	flex: 1 1 auto;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import UsersTable from "../UserTables/UsersTable"
-import { users } from "../UserTables/users"
+import UsersTable from "../UserTables/UsersTable";
+import { users } from "../UserTables/users";
 
 
 export default function UserTables() {
