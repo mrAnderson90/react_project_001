@@ -4,7 +4,7 @@ import './UserTableStyle.css';
 import Pagination from '../Pagination/Pagination';
 
 export default function UsersTable({ users }) {
-  const [userList, setUserList ] = useState(users);
+  const [userList, setUserList] = useState(users);
   const [limit, setLimit] = useState(5);
   const [page, setPage] = useState(1);
 
@@ -24,11 +24,21 @@ export default function UsersTable({ users }) {
   return (
     <div className="table">
       <div className="table_row table_header">
-        <div id="id" onClick={handleSort}>ID</div>
-        <div id="name" onClick={handleSort}>Name</div>
-        <div id="surname" onClick={handleSort}>Surname</div>
-        <div id="birthData" onClick={handleSort}>Birthday</div>
-        <div id="email" onClick={handleSort}>Email</div>
+        <div id="id" onClick={handleSort}>
+          ID
+        </div>
+        <div id="name" onClick={handleSort}>
+          Name
+        </div>
+        <div id="surname" onClick={handleSort}>
+          Surname
+        </div>
+        <div id="birthData" onClick={handleSort}>
+          Birthday
+        </div>
+        <div id="email" onClick={handleSort}>
+          Email
+        </div>
       </div>
       {slicedList.map(({ id, name, surname, birthData, email }) => (
         <div className="table_row" key={id}>
