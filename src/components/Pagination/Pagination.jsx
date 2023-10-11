@@ -1,13 +1,10 @@
 import { useState } from 'react';
+import _ from 'lodash';
 import cn from 'classnames';
 import './Pagination.css';
 
 export default function Pagination({ pageCount, activePage, setActive }) {
-  const count = [];
-
-  for (let i = 1; i <= pageCount; i += 1) {
-    count.push(i)
-  };
+  const count = _.range(1, pageCount);
 
   const isActive = (id) => id === activePage;
   const navItemStyle = (id) => cn('nav-panel-item', { active: isActive(id) });
@@ -26,13 +23,17 @@ export default function Pagination({ pageCount, activePage, setActive }) {
 
   return (
     <div className="nav-panel">
-      <button type="button" className="nav-panel-item" onClick={handlePrev}>Previous</button>
+      <button type="button" className="nav-panel-item" onClick={handlePrev}>
+        Previous
+      </button>
       {count.map((item) => (
-        <button type='button' key={item} className={navItemStyle(item)}>
+        <button type="button" key={item} className={navItemStyle(item)}>
           {item}
         </button>
       ))}
-      <button type="button" className="nav-panel-item" onClick={handleNext}>Next</button>
+      <button type="button" className="nav-panel-item" onClick={handleNext}>
+        Next
+      </button>
     </div>
-  )
+  );
 }
