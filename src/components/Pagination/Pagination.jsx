@@ -4,7 +4,7 @@ import cn from 'classnames';
 import './Pagination.css';
 
 export default function Pagination({ pageCount, activePage, setActive }) {
-  const count = _.range(1, pageCount);
+  const count = _.range(1, pageCount + 1);
 
   const isActive = (id) => id === activePage;
   const navItemStyle = (id) => cn('nav-panel-item', { active: isActive(id) });
