@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import UsersTable from '../UserTables/UsersTable';
 import Modal from '../Modal/Modal';
+import LoginForm from '../LoginForm/LoginForm';
 
 import { users } from '../UserTables/users';
 
@@ -14,7 +15,9 @@ export default function UserTables() {
         Open Modal
       </button>
       <UsersTable users={users} />
-      <Modal isActive={isModalActive} setActive={setModalActive} />
+      <Modal isActive={isModalActive} setActive={setModalActive}>
+        <LoginForm setActive={setModalActive} />
+      </Modal>
     </div>
   );
 }
