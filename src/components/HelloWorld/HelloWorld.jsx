@@ -1,15 +1,20 @@
-import React from "react";
-import UsersTable from "../UserTables/UsersTable";
-import { users } from "../UserTables/users";
+import { useState } from 'react';
+import UsersTable from '../UserTables/UsersTable';
+import Modal from '../Modal/Modal';
 
+import { users } from '../UserTables/users';
 
 export default function UserTables() {
-    return (
-        <div>
-            <h1>Hello World</h1>
-            <button>I'm a button</button>
-            <UsersTable users={users}/>
-        </div>
-    );
-}
+  const [isModalActive, setModalActive] = useState(false);
 
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <button type="button" onClick={() => setModalActive(true)}>
+        Open Modal
+      </button>
+      <UsersTable users={users} />
+      <Modal isActive={isModalActive} setActive={setModalActive} />
+    </div>
+  );
+}
