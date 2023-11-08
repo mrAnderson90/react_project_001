@@ -1,8 +1,8 @@
-import { getConfig } from './getConfig'
-import getFlavor from './getFlavor'
+import { getConfig } from './getConfig';
+import getFlavor from './getFlavor';
 
-const flavor = getFlavor()
+const flavor = getFlavor();
 
-export default getConfig(flavor)
+export default getConfig(flavor);
 
-export { getFlavor }
+export { getFlavor };

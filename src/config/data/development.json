@@ -1,4 +1,4 @@
 {
-    "EXAMPLE": "string-in-development",
-    "SENTRY_ENABLED": "0"
+  "EXAMPLE": "string-in-development",
+  "SENTRY_ENABLED": "0"
 }

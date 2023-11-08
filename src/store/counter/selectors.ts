@@ -1,3 +1,3 @@
-import { AppState } from '../index'
+import { AppState } from '../index';
 
-export const selectCounter = (state: AppState) => state.exampleReducer.counter
+export const selectCounter = (state: AppState) => state.exampleReducer.counter;

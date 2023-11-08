@@ -1,26 +1,26 @@
 .nav-panel {
-	display: flex;
-	justify-content: center;
-	margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .nav-panel-item {
-	padding: 0.5rem;
-	border: 1px solid #999;
-	color: dodgerblue;
-	background-color: inherit;
+  padding: 0.5rem;
+  border: 1px solid #999;
+  color: dodgerblue;
+  background-color: inherit;
 }
 
 .nav-panel-item.active {
-	color: #fff;
-	background-color: dodgerblue;
-	border: none;
+  color: #fff;
+  background-color: dodgerblue;
+  border: none;
 }
 
 .nav-panel-item:first-child {
-	border-radius: 10% 0 0 10%;
+  border-radius: 10% 0 0 10%;
 }
 
 .nav-panel-item:last-child {
-	border-radius: 0 10% 10% 0;
+  border-radius: 0 10% 10% 0;
 }

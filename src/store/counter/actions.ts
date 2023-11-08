@@ -1,31 +1,31 @@
-export const INCREASE_COUNTER = 'exampleReducer/INCREASE_CONTER'
+export const INCREASE_COUNTER = 'exampleReducer/INCREASE_CONTER';
 
 export type IncreaseAction = {
-  type: typeof INCREASE_COUNTER
+  type: typeof INCREASE_COUNTER;
   payload: {
-    increment?: number
-  }
-}
+    increment?: number;
+  };
+};
 export const increaseAction = (increment?: number): IncreaseAction => ({
   type: INCREASE_COUNTER,
   payload: {
-    increment: increment,
-  },
-})
+    increment: increment
+  }
+});
 
-export const DECREASE_COUNTER = 'exampleReducer/DECREASE_COUNTER'
+export const DECREASE_COUNTER = 'exampleReducer/DECREASE_COUNTER';
 
 export type DecreaseAction = {
-  type: typeof DECREASE_COUNTER
+  type: typeof DECREASE_COUNTER;
   payload: {
-    decrement?: number
-  }
-}
+    decrement?: number;
+  };
+};
 export const decreaseAction = (decrement?: number): DecreaseAction => ({
   type: DECREASE_COUNTER,
   payload: {
-    decrement: decrement,
-  },
-})
+    decrement: decrement
+  }
+});
 
-export type Actions = IncreaseAction | DecreaseAction
+export type Actions = IncreaseAction | DecreaseAction;
